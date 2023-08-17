@@ -1,0 +1,129 @@
+body {
+    background-color: rgb(40, 40, 40);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+marquee{
+    position: relative;
+    top: -300px;
+    background-color: yellow;
+    transform: rotate(20deg);
+    width: 110%;
+}
+
+marquee a{
+    font-family: 'Rammetto One', cursive;
+    margin: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+#heading h1 {
+    font-family: 'Rammetto One', cursive;
+    font-size: 5rem;
+    -webkit-animation:rainbow 3s linear infinite;
+}
+
+@-webkit-keyframes rainbow {
+    from {
+      text-shadow:
+        0.04em 0.04em #ff0000,
+        0.08em 0.08em #ff7f00,
+        0.12em 0.12em #ffff00,
+        0.16em 0.16em #00ff00,
+        0.20em 0.20em #0000ff,
+        0.24em 0.24em #4b0082,
+        0.28em 0.28em #8f00ff;
+    }
+    15% {
+      text-shadow:
+        0.04em 0.04em #8f00ff,
+        0.08em 0.08em #ff0000,
+        0.12em 0.12em #ff7f00,
+        0.16em 0.16em #ffff00,
+        0.20em 0.20em #00ff00,
+        0.24em 0.24em #0000ff,
+        0.28em 0.28em #4b0082;
+    }
+    30% {
+      text-shadow:
+        0.04em 0.04em #4b0082,
+        0.08em 0.08em #8f00ff,
+        0.12em 0.12em #ff0000,
+        0.16em 0.16em #ff7f00,
+        0.20em 0.20em #ffff00,
+        0.24em 0.24em #00ff00,
+        0.28em 0.28em #0000ff;
+    }
+    45% {
+      text-shadow:
+        0.04em 0.04em #0000ff,
+        0.08em 0.08em #4b0082,
+        0.12em 0.12em #8f00ff,
+        0.16em 0.16em #ff0000,
+        0.20em 0.20em #ff7f00,
+        0.24em 0.24em #ffff00,
+        0.28em 0.28em #00ff00;
+    }
+    60% {
+      text-shadow:
+        0.04em 0.04em #00ff00,
+        0.08em 0.08em #0000ff,
+        0.12em 0.12em #4b0082,
+        0.16em 0.16em #8f00ff,
+        0.20em 0.20em #ff0000,
+        0.24em 0.24em #ff7f00,
+        0.28em 0.28em #ffff00;
+    }
+    75% {
+      text-shadow:
+        0.04em 0.04em #ffff00,
+        0.08em 0.08em #00ff00,
+        0.12em 0.12em #0000ff,
+        0.16em 0.16em #4b0082,
+        0.20em 0.20em #8f00ff,
+        0.24em 0.24em #ff0000,
+        0.28em 0.28em #ff7f00;
+    }
+    90% {
+      text-shadow:
+        0.04em 0.04em #ff7f00,
+        0.08em 0.08em #ffff00,
+        0.12em 0.12em #00ff00,
+        0.16em 0.16em #0000ff,
+        0.20em 0.20em #4b0082,
+        0.24em 0.24em #8f00ff,
+        0.28em 0.28em #ff0000;
+    }
+    to {
+      text-shadow:
+        0.04em 0.04em #ff0000,
+        0.08em 0.08em #ff7f00,
+        0.12em 0.12em #ffff00,
+        0.16em 0.16em #00ff00,
+        0.20em 0.20em #0000ff,
+        0.24em 0.24em #4b0082,
+        0.28em 0.28em #8f00ff;
+    }
+  }
+
+#form{
+    padding: 2rem;
+    background-color: rgb(70, 70, 70);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    #heading h1 {
+        font-size: 3rem;
+    }
+}

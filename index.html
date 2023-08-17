@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>TikTok TTS by Yash Doshi</title>
+    <link rel="icon" href="tiktok-6338432_1280.webp" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <marquee behavior="alternate" direction="" loop="-1"><a href="https://github.com/yashdoshi12">Follow me on Github!</a><a href="https://www.linkedin.com/in/yashdoshi-/">Follow me on LinkedIn!</a><a href="https://github.com/yashdoshi12">Follow me on Github!</a><a href="https://www.linkedin.com/in/yashdoshi-/">Follow me on LinkedIn!</a><a href="https://github.com/yashdoshi12">Follow me on Github!</a><a href="https://www.linkedin.com/in/yashdoshi-/">Follow me on LinkedIn!</a><a href="https://github.com/yashdoshi12">Follow me on Github!</a><a href="https://www.linkedin.com/in/yashdoshi-/">Follow me on LinkedIn!</a><a href="https://github.com/yashdoshi12">Follow me on Github!</a><a href="https://www.linkedin.com/in/yashdoshi-/">Follow me on LinkedIn!</a><a href="https://github.com/yashdoshi12">Follow me on Github!</a><a href="https://www.linkedin.com/in/yashdoshi-/">Follow me on LinkedIn!</a><a href="https://github.com/yashdoshi12">Follow me on Github!</a><a href="https://www.linkedin.com/in/yashdoshi-/">Follow me on LinkedIn!</a></marquee>
+    <div id="heading"><h1>TikTok TTS</h1></div>
+    <div id="form">
+        <form onsubmit="event.preventDefault(); submitForm()">
+            <label for="text" hidden>Text to generate into speech</label>
+            <p id="charcount">999/999</p>
+            <textarea id="text" name="text" placeholder="Type something." oninput="onTextareaInput()" disabled></textarea><br/>
+            <label for="voice" hidden>Voice to use</label>
+            <select name="voice" id="voice" disabled>
+                <option selected disabled hidden value="none">Select a voice</option>
+
+                <option disabled class="bold">English US</option>
+                <option value="en_us_001">Female</option>
+                <option value="en_us_006">Male 1</option>
+                <option value="en_us_007">Male 2</option>
+                <option value="en_us_009">Male 3</option>
+                <option value="en_us_010">Male 4</option>
+                <option disabled></option>
+
+                <option disabled class="bold">English UK</option>
+                <option value="en_uk_001">Male 1</option>
+                <option value="en_uk_003">Male 2</option>
+                <option disabled></option>
+
+                <option disabled class="bold">English AU</option>
+                <option value="en_au_001">Female</option>
+                <option value="en_au_002">Male</option>
+                <option disabled></option>
+
+                <option disabled class="bold">French</option>
+                <option value="fr_001">Male 1</option>
+                <option value="fr_002">Male 2</option>
+                <option disabled></option>
+
+                <option disabled class="bold">German</option>
+                <option value="de_001">Female</option>
+                <option value="de_002">Male</option>
+                <option disabled></option>
+
+                <option disabled class="bold">Spanish</option>
+                <option value="es_002">Male</option>
+                <option disabled></option>
+
+                <option disabled class="bold">Spanish MX</option>
+                <option value="es_mx_002">Male 1</option>
+                <option value="es_male_m3">Male 2</option>
+                <option value="es_female_f6">Female 1</option>
+                <option value="es_female_fp1">Female 2</option>
+                <option value="es_mx_female_supermom">Female 3</option>
+                <option value="es_mx_male_transformer">Optimus Prime (Transformers)</option>
+                <option disabled></option>
+
+                <option disabled class="bold">Portuguese BR</option>
+                <option value="br_003">Female 2</option>
+                <option value="br_004">Female 3</option>
+                <option value="br_005">Male</option>
+                <option disabled></option>
+
+                <option disabled class="bold">Indonesian</option>
+                <option value="id_001">Female</option>
+                <option disabled></option>
+
+                <option disabled class="bold">Japanese</option>
+                <option value="jp_001">Female 1</option>
+                <option value="jp_003">Female 2</option>
+                <option value="jp_005">Female 3</option>
+                <option value="jp_006">Male</option>
+                <option disabled></option>
+
+                <option disabled class="bold">Korean</option>
+                <option value="kr_002">Male 1</option>
+                <option value="kr_004">Male 2</option>
+                <option value="kr_003">Female</option>
+                <option disabled></option>
+
+                <option disabled class="bold">Characters</option>
+                <option value="en_us_ghostface">Ghostface (Scream)</option>
+                <option value="en_us_chewbacca">Chewbacca (Star Wars)</option>
+                <option value="en_us_c3po">C3PO (Star Wars)</option>
+                <option value="en_us_stitch">Stitch (Lilo & Stitch)</option>
+                <option value="en_us_stormtrooper">Stormtrooper (Star Wars)</option>
+                <option value="en_us_rocket">Rocket (Guardians of the Galaxy)</option>
+                <option disabled></option>
+
+                <option disabled class="bold">Singing</option>
+                <option value="en_female_f08_salut_damour">Alto</option>
+                <option value="en_male_m03_lobby">Tenor</option>
+                <option value="en_male_m03_sunshine_soon">Sunshine Soon</option>
+                <option value="en_female_f08_warmy_breeze">Warmy Breeze</option>
+                <option value="en_female_ht_f08_glorious">Glorious</option>
+                <option value="en_male_sing_funny_it_goes_up">It Goes Up</option>
+                <option value="en_male_m2_xhxs_m03_silly">Chipmunk</option>
+                <option value="en_female_ht_f08_wonderful_world">Dramatic</option>
+            </select>
+            <button id="submit" disabled>Generate</button>
+        </form>
+    </div>
+
+    <div id="error" style="display: none">
+        <h1>Error</h1>
+        <p id="errortext">There was an error.</p>
+    </div>
+
+    <div id="success" style="display: none">
+        <h1>Success</h1>
+        <p id="generatedtext"></p>
+        <audio controls id="audio" src="">Umm, update your browser.</audio>
+    </div>
+</body>
+</html>
