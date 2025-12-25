@@ -1,4 +1,4 @@
-const ENDPOINT = 'https://tiktok-tts.weilnet.workers.dev'
+const ENDPOINT = 'https://tiktok-tts.weilnet.workers.dev/';
 
 const TEXT_BYTE_LIMIT = 300
 const textEncoder = new TextEncoder()
